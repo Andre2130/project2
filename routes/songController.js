@@ -169,7 +169,7 @@ router.get('/:songId/delete', (request, response) => {
     const songId = request.params.songId
 
     // USE the playlistModel to find the playlist by ID
-    playlistModel.findById(playlistId)
+    PlaylistModel.findById(playlistId)
         .then((playlist) => {
             // THEN once the playlist has been returned,
             // REMOVE the song from the playlist's song array
