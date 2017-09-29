@@ -33,6 +33,6 @@ const PlaylistModel = mongoose.model('Playlist', PlaylistSchema)
 const SongModel = mongoose.model('Song', SongSchema)
 
 module.exports = {
-    CompanyModel: CompanyModel,
-    SnowboardModel: SnowboardModel
+    PlaylistModel: PlaylistModel,
+    SongModel: SongModel
 }

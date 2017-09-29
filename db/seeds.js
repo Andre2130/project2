@@ -24,15 +24,15 @@ PlaylistModel.remove({}, function (err) {
     console.log(err);
 });
 
-const burton = new PlaylistModel({ name: 'Burton', country: 'US'})
-const dc = new PlaylistModel({ name: 'DC', country: 'US'})
-const ktwo = new PlaylistModel({ name: 'K2', country: 'Canada'})
+const burton = new PlaylistModel({ name: 'SoulSauce', country: 'US'})
+const dc = new PlaylistModel({ name: 'TrapSauce', country: 'US'})
+const ktwo = new PlaylistModel({ name: 'HotSauce', country: 'Canada'})
 
 const littleSong = new SongModel({ name: 'Little Song', price: 123.45}) 
 const bigSong = new SongModel({ name: 'Big Song', price: 123.45}) 
 const blueSong = new SongModel({ name: 'Blue Song', price: 123.45}) 
 
-const playlits = [burton, dc, ktwo]
+const playlits = [SoulSauce, TrapSauce, HotSauce]
 const songs = [littleSong, bigSong, blueSong]
 
 
