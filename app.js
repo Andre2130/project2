@@ -33,6 +33,9 @@ app.use('/users', users);
 const playlistsController = require('./routes/playlistsController.js')
 app.use('/playlists', playlistsController)
 
+const songController = require('./routes/songController')
+app.use('/playlists/:playlistId/songs', songController)
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

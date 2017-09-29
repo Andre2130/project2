@@ -24,20 +24,20 @@ PlaylistModel.remove({}, function (err) {
     console.log(err);
 });
 
-const burton = new PlaylistModel({ name: 'SoulSauce', country: 'US'})
-const dc = new PlaylistModel({ name: 'TrapSauce', country: 'US'})
-const ktwo = new PlaylistModel({ name: 'HotSauce', country: 'Canada'})
+const soulSauce = new PlaylistModel({ name: 'SoulSauce', country: 'US'})
+const trapSauce = new PlaylistModel({ name: 'TrapSauce', country: 'US'})
+const hotSauce = new PlaylistModel({ name: 'HotSauce', country: 'Canada'})
 
 const littleSong = new SongModel({ name: 'Little Song', price: 123.45}) 
 const bigSong = new SongModel({ name: 'Big Song', price: 123.45}) 
 const blueSong = new SongModel({ name: 'Blue Song', price: 123.45}) 
 
-const playlits = [SoulSauce, TrapSauce, HotSauce]
+const playlists = [soulSauce, trapSauce, hotSauce]
 const songs = [littleSong, bigSong, blueSong]
 
 
 // Here we assign some projects to each student.
-playlits.forEach((playlist) => {
+playlists.forEach((playlist) => {
 
     playlist.songs = songs
 

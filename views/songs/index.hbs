@@ -1,0 +1,18 @@
+<div>
+    <h1>{{playlist.name}}'s Songs</h1>
+
+    <div>
+        <a href="/playlists/{{playlist._id}}/songs/new">Create a New song</a>
+    </div>
+
+    <div>
+        <a href="/playlists">Back to playlists</a>
+    </div>
+    
+    {{#each playlist.songs}}
+        <div>
+            {{this.name}} - {{this.price}}
+            <a href="/playlists/{{../playlist._id}}/songs/{{this._id}}">View</a>
+        </div>
+    {{/each}}
+</div>
