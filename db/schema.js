@@ -27,12 +27,24 @@ const PlaylistSchema = new Schema({
     songs: [SongSchema]
 });
 
+const UserSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    }
+})
 
 
 const PlaylistModel = mongoose.model('Playlist', PlaylistSchema)
 const SongModel = mongoose.model('Song', SongSchema)
+const UserModel = mongoose.model('User', UserSchema)
 
 module.exports = {
     PlaylistModel: PlaylistModel,
-    SongModel: SongModel
+    SongModel: SongModel,
+    UserModle: UserModel
 }
