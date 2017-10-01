@@ -24,9 +24,9 @@ PlaylistModel.remove({}, function (err) {
     console.log(err);
 });
 
-const soulSauce = new PlaylistModel({ name: 'SoulSauce', country: 'US'})
-const trapSauce = new PlaylistModel({ name: 'TrapSauce', country: 'US'})
-const hotSauce = new PlaylistModel({ name: 'HotSauce', country: 'Canada'})
+const soulSauce = new PlaylistModel({ name: 'Soul Sauce', country: 'US'})
+const trapSauce = new PlaylistModel({ name: 'Trap Sauce', country: 'US'})
+const hotSauce = new PlaylistModel({ name: 'Hot Sauce', country: 'Canada'})
 
 const controlla = new SongModel({ name: 'Controlla', price: 123.45}) 
 const oneDance = new SongModel({ name: 'One Dance', price: 123.45}) 

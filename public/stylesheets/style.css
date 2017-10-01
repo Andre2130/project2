@@ -5,8 +5,13 @@ body {
 }
 .main {
 text-align: center;
-background-color: red
+background-color: red;
+height: 1000px;
+font-size: 50px;
 }
 a {
   color: #00B7FF;
+}
+#SoulSauce{
+background-image: url("http://wethesauce.com/wp-content/uploads/2016/07/grannysauce.jpg");
 }
