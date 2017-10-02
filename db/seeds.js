@@ -25,6 +25,10 @@ PlaylistModel.remove({}, function (err) {
     console.log(err);
 });
 
+UserModel.remove({}, function (err) {
+    console.log(err);
+});
+
 const soulSauce = new PlaylistModel({ name: 'Soul', creator: 'US'})
 const trapSauce = new PlaylistModel({ name: 'Trap', creator: 'US'})
 const hotSauce = new PlaylistModel({ name: 'Hot', creator: 'Canada'})
@@ -63,7 +67,7 @@ users.forEach((user) => {
     
         user.playlists = playlists
     
-        user.save()
+        andre.save()
             .then((user) => {
                 console.log(`${user.name} saved!`)
             })
