@@ -1,11 +1,14 @@
-   <div class="main">
+   <h1>Sauce Radio</h1>
+   
+   
+   <nav class="main">
     {{#each playlists}}
-        <div>
-            {{this.name}} - {{this.country}}
-            <a href="/playlists/{{this._id}}">{{this.name}} Info</a>
-            <a href="/playlists/{{this._id}}/songs">{{this.name}}'s Songs</a>
-        </div><br>
+        <nav>
+            <a href="/playlists/{{this._id}}" role="button">{{this.name}}</a>
+        </nav>
     {{/each}}
+   </nav>
+
  <div>
         <a href="/playlists/new">Add New playlists</a>
     </div>

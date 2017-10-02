@@ -19,6 +19,7 @@ db.once('open', function () {
 
 var PlaylistModel = Schema.PlaylistModel;
 var SongModel = Schema.SongModel;
+var UserModel = Schema.UserModle;
 
 PlaylistModel.remove({}, function (err) {
     console.log(err);
@@ -32,14 +33,23 @@ const controlla = new SongModel({ name: 'Controlla', price: 123.45})
 const oneDance = new SongModel({ name: 'One Dance', price: 123.45}) 
 const uWithMe = new SongModel({ name: 'U With Me?', price: 123.45}) 
 
+const controlla2 = new SongModel({ name: 'Controlla2', price: 123.45}) 
+const oneDance2 = new SongModel({ name: 'One Dance2', price: 123.45}) 
+const uWithMe2 = new SongModel({ name: 'U With Me?2', price: 123.45}) 
+
+const andre = new UserModel({name: 'Andre', email: 'Andre@sauceradio.com'})
+
 const playlists = [soulSauce, trapSauce, hotSauce]
 const songs = [controlla, oneDance, uWithMe]
+const song2 = [controlla2, oneDance2, uWithMe2]
+const users = [andre]
 
 
 // Here we assign some projects to each student.
 playlists.forEach((playlist) => {
 
     playlist.songs = songs
+    soulSauce.songs = song2
 
     playlist.save()
         .then((playlist) => {
