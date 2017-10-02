@@ -26,7 +26,7 @@ height: 1000px;
   background-image: url("https://t4.ftcdn.net/jpg/01/12/63/21/240_F_112632151_YxaTkDkt4rMYRZRXKXcv8y1Kea7uhKs6.jpg");
   height: 1000px;
 }
-.playlist {
+#playlist {
   display: inline-block;
   text-align: center;
   width: 85%;

@@ -3,8 +3,8 @@
    
    <nav class="main">
     {{#each playlists}}
-        <div id="playlists">
-            <a href="/playlists/{{this._id}}" role="button">{{this.name}}</a>
+        <div >
+            <button id="playlists"><a href="/playlists/{{this._id}}" role="button">{{this.name}}</a></button>
         </div>
     {{/each}}
    </nav>

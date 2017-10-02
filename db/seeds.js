@@ -59,6 +59,18 @@ playlists.forEach((playlist) => {
             console.log(error)
         })
 });
+users.forEach((user) => {
+    
+        user.playlists = playlists
+    
+        user.save()
+            .then((user) => {
+                console.log(`${user.name} saved!`)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    });
 
 // Disconnect from database
 db.close();

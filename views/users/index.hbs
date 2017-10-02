@@ -1,18 +1,15 @@
-<div>
-    <h1>{{playlist.name}}'s Songs</h1>
-
-    <div>
-        <a href="/playlists/{{playlist._id}}/songs/new">Create a New song</a>
-    </div>
-
-    <div>
-        <a href="/playlists">Back to playlists</a>
-    </div>
-    
-    {{#each playlist.songs}}
-        <div>
-            {{this.name}} - {{this.length}}
-            <a href="/playlists/{{../playlist._id}}/songs/{{this._id}}">View</a>
+   <h1>Members</h1>
+   
+   
+   <nav class="main">
+    {{#each users}}
+        <div >
+            <button id="users"><a href="/users/{{this._id}}" role="button">{{this.name}}</a></button>
         </div>
     {{/each}}
-</div>
+   </nav>
+
+ <div>
+        <a href="/users/new">Add New users</a>
+    </div>
+    

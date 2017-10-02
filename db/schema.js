@@ -46,5 +46,5 @@ const UserModel = mongoose.model('User', UserSchema)
 module.exports = {
     PlaylistModel: PlaylistModel,
     SongModel: SongModel,
-    UserModle: UserModel
+    UserModel: UserModel
 }
