@@ -8,7 +8,7 @@ const SongSchema = new Schema({
         type: String,
         required: true
     },
-    price: {
+    length: {
         type: Number,
         required: true
     }
@@ -20,7 +20,7 @@ const PlaylistSchema = new Schema({
         required: true,
         unique: true
     },
-    country: {
+    creator: {
         type: String,
         required: true
     },

@@ -1,5 +1,5 @@
 <div>
-    <h1>{{playlist.name}}'s Songs</h1>
+    <h1>{{playlist.name}} Sauce TrackList</h1>
 
     <div>
         <a href="/playlists/{{playlist._id}}/songs/new">Create a New song</a>
@@ -11,7 +11,7 @@
     
     {{#each playlist.songs}}
         <div>
-            {{this.name}} - {{this.price}}
+            {{this.name}} - {{this.length}}
             <a href="/playlists/{{../playlist._id}}/songs/{{this._id}}">View</a>
         </div>
     {{/each}}

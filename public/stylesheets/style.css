@@ -5,16 +5,39 @@ body {
 }
 .main {
 text-align: center;
-background-color: red;
+background-color: rgba(211,211,211,.4);
 height: 1000px;
 font-size: 35px;
+
+
 }
 a {
-  color: #00B7FF;
+  color: #A200FF;
 }
-#SoulSauce{
-background-image: url("http://wethesauce.com/wp-content/uploads/2016/07/grannysauce.jpg");
+#Soul {
+background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ca/65/38/ca65381c94b4a82080d039dcb846d938.jpg");
+height: 1000px;
+}
+#Trap {
+  background-image: url("http://www.officialpsds.com/images/stocks/Outside-Trap-House-stock7221-large.png");
+  height: 1000px;
+}
+#Hot {
+  background-image: url("https://t4.ftcdn.net/jpg/01/12/63/21/240_F_112632151_YxaTkDkt4rMYRZRXKXcv8y1Kea7uhKs6.jpg");
+  height: 1000px;
+}
+.playlist {
+  display: inline-block;
+  text-align: center;
+  width: 85%;
+  background-color: rgba(211,211,211,.4);
 }
 nav {
   display: inline;
+}
+h1 {
+  background-color: red;
+}
+h3 {
+  background-color: red;
 }
