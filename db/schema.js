@@ -11,7 +11,9 @@ const SongSchema = new Schema({
     artist: {
         type: String,
         required: true
-    }
+    },
+    mp3: String
+
 })
 
 const PlaylistSchema = new Schema({

@@ -33,13 +33,13 @@ const soulSauce = new PlaylistModel({ name: 'Soul', creator: 'Andre'})
 const trapSauce = new PlaylistModel({ name: 'Trap', creator: 'Andre'})
 const hotSauce = new PlaylistModel({ name: 'Hot', creator: 'Sauce Radio'})
 
-const controlla = new SongModel({ name: 'Controlla', artist: 'Drake'}) 
-const oneDance = new SongModel({ name: 'One Dance', artist: 'Drake'}) 
-const uWithMe = new SongModel({ name: 'U With Me?', artist: 'Drake'}) 
+const controlla = new SongModel({ name: 'Controlla', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
+const oneDance = new SongModel({ name: 'One Dance', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
+const uWithMe = new SongModel({ name: 'U With Me?', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
 
-const controlla2 = new SongModel({ name: 'Hi', artist: 'Drake'}) 
-const oneDance2 = new SongModel({ name: 'One Dance2', artist: 'Drake'}) 
-const uWithMe2 = new SongModel({ name: 'U With Me?2', artist: 'Drake'}) 
+const controlla2 = new SongModel({ name: 'Hi', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
+const oneDance2 = new SongModel({ name: 'One Dance2', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
+const uWithMe2 = new SongModel({ name: 'U With Me?2', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
 
 const andre = new UserModel({name: 'Andre', email: 'Andre@sauceradio.com'})
 
