@@ -34,25 +34,24 @@ const trapSauce = new PlaylistModel({ name: 'Trap', creator: 'Andre'})
 const hotSauce = new PlaylistModel({ name: 'Hot', creator: 'Sauce Radio'})
 
 const controlla = new SongModel({ name: 'Controlla', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
-const oneDance = new SongModel({ name: 'One Dance', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
+const sleepWalkin = new SongModel({ name: 'Sleep Walkin', artist: 'Mozzy', mp3:'http://wethesauce.com/wp-content/uploads/2017/08/05.-Sleep-Walkin.mp3'}) 
 const uWithMe = new SongModel({ name: 'U With Me?', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
-
-const controlla2 = new SongModel({ name: 'Hi', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
-const oneDance2 = new SongModel({ name: 'One Dance2', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
+const getYou = new SongModel({ name: 'Get You', artist: 'Daniel Caesar (feat. Kali Uchis)', mp3:'http://wethesauce.com/wp-content/uploads/2017/08/01-Get-You-feat.-Kali-Uchis.mp3'}) 
+const oneDance = new SongModel({ name: 'One Dance2', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
 const uWithMe2 = new SongModel({ name: 'U With Me?2', artist: 'Drake', mp3:'http://wethesauce.com/wp-content/uploads/2016/06/11.-Controlla.mp3'}) 
 
 const andre = new UserModel({name: 'Andre', email: 'Andre@sauceradio.com'})
 
 const playlists = [soulSauce, trapSauce, hotSauce]
-const songs = [controlla, oneDance, uWithMe]
-const song2 = [controlla2, oneDance2, uWithMe2]
+const tsongs = [sleepWalkin, oneDance, uWithMe]
+const song2 = [controlla, getYou, oneDance]
 const users = [andre]
 
 
 // Here we assign some projects to each student.
 playlists.forEach((playlist) => {
 
-    playlist.songs = songs
+    playlist.songs = tsongs
     soulSauce.songs = song2
 
     playlist.save()
