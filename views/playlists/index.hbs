@@ -1,10 +1,10 @@
-   <h1>Sauce Radio</h1>
+   
    
    
    <nav class="main">
     {{#each playlists}}
-        <div >
-            <button id="playlists"><a href="/playlists/{{this._id}}" role="button">{{this.name}}</a></button>
+        <div>
+            <button class="{{this.name}}"id="playlists"><a href="/playlists/{{this._id}}">{{this.name}}</a></button>
         </div>
     {{/each}}
    </nav>

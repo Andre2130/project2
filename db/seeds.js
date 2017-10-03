@@ -37,7 +37,7 @@ const controlla = new SongModel({ name: 'Controlla', length: 123.45})
 const oneDance = new SongModel({ name: 'One Dance', length: 123.45}) 
 const uWithMe = new SongModel({ name: 'U With Me?', length: 123.45}) 
 
-const controlla2 = new SongModel({ name: 'Controlla2', length: 123.45}) 
+const controlla2 = new SongModel({ name: 'Hi', length: 123.45}) 
 const oneDance2 = new SongModel({ name: 'One Dance2', length: 123.45}) 
 const uWithMe2 = new SongModel({ name: 'U With Me?2', length: 123.45}) 
 

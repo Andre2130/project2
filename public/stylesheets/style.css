@@ -35,9 +35,31 @@ height: 1000px;
 nav {
   display: inline;
 }
-h1 {
-  background-color: red;
+button {
+  
+  width:100%;
 }
-h3 {
-  background-color: red;
+h1 {
+  color: #A200FF;
+  background-color: rgba(211,211,211,.4); 
+}
+.Hot {
+  background-image: url("https://t4.ftcdn.net/jpg/01/12/63/21/240_F_112632151_YxaTkDkt4rMYRZRXKXcv8y1Kea7uhKs6.jpg");
+  padding: 20px;
+}
+.Trap {
+  background-image: url("http://www.officialpsds.com/images/stocks/Outside-Trap-House-stock7221-large.png");
+  padding: 20px;
+}
+.Soul {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ca/65/38/ca65381c94b4a82080d039dcb846d938.jpg");
+  padding: 20px;
+  margin-top: 200px;
+}
+.front {
+  margin-top: 200px;
+}
+li {
+  text-align: center;
+  background-color: rgba(211,211,211,.4);
 }
