@@ -19,7 +19,7 @@ db.once('open', function () {
 
 var PlaylistModel = Schema.PlaylistModel;
 var SongModel = Schema.SongModel;
-var UserModel = Schema.UserModle;
+var UserModel = Schema.UserModel;
 
 PlaylistModel.remove({}, function (err) {
     console.log(err);

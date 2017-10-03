@@ -2,4 +2,10 @@
     {{song.name}} - {{song.artist}}
     <a href="/playlists/{{playlistId}}/songs/{{song._id}}/edit">Edit</a>
     <a href="/playlists/{{playlistId}}/songs/{{song._id}}/delete">Delete</a>
+    <div id="player">
+      <audio controls id="spendIt" autoplay loop>
+       <source src="{{song.mp3}}" type="audio/mpeg">
+                  If you're reading this, audio isn't supported.
+      </audio>
+  </div>
 </div>
