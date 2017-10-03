@@ -29,17 +29,17 @@ UserModel.remove({}, function (err) {
     console.log(err);
 });
 
-const soulSauce = new PlaylistModel({ name: 'Soul', creator: 'US'})
-const trapSauce = new PlaylistModel({ name: 'Trap', creator: 'US'})
-const hotSauce = new PlaylistModel({ name: 'Hot', creator: 'Canada'})
+const soulSauce = new PlaylistModel({ name: 'Soul', creator: 'Andre'})
+const trapSauce = new PlaylistModel({ name: 'Trap', creator: 'Andre'})
+const hotSauce = new PlaylistModel({ name: 'Hot', creator: 'Sauce Radio'})
 
-const controlla = new SongModel({ name: 'Controlla', length: 123.45}) 
-const oneDance = new SongModel({ name: 'One Dance', length: 123.45}) 
-const uWithMe = new SongModel({ name: 'U With Me?', length: 123.45}) 
+const controlla = new SongModel({ name: 'Controlla', artist: 'Drake'}) 
+const oneDance = new SongModel({ name: 'One Dance', artist: 'Drake'}) 
+const uWithMe = new SongModel({ name: 'U With Me?', artist: 'Drake'}) 
 
-const controlla2 = new SongModel({ name: 'Hi', length: 123.45}) 
-const oneDance2 = new SongModel({ name: 'One Dance2', length: 123.45}) 
-const uWithMe2 = new SongModel({ name: 'U With Me?2', length: 123.45}) 
+const controlla2 = new SongModel({ name: 'Hi', artist: 'Drake'}) 
+const oneDance2 = new SongModel({ name: 'One Dance2', artist: 'Drake'}) 
+const uWithMe2 = new SongModel({ name: 'U With Me?2', artist: 'Drake'}) 
 
 const andre = new UserModel({name: 'Andre', email: 'Andre@sauceradio.com'})
 

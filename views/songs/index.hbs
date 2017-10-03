@@ -11,7 +11,7 @@
     
     {{#each playlist.songs}}
         <div>
-            <li>{{this.name}} - {{this.length}}</li>
+            <li>{{this.name}} - {{this.artist}}</li>
             <a href="/playlists/{{../playlist._id}}/songs/{{this._id}}">View</a>
         </div>
     {{/each}}

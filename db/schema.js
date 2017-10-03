@@ -8,8 +8,8 @@ const SongSchema = new Schema({
         type: String,
         required: true
     },
-    length: {
-        type: Number,
+    artist: {
+        type: String,
         required: true
     }
 })
