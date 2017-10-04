@@ -5,7 +5,7 @@ const Schema = require("../db/schema.js");
 const UserModel = Schema.UserModel;
 
 /* GET users listing. */
-// INDEX route
+// INDEX route (all routes structered from previous HW)
 router.get('/', (request, response) => {
   
       // FIND all of the playlists in the database

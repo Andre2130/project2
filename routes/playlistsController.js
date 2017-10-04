@@ -4,7 +4,7 @@ const router = express.Router()
 const Schema = require("../db/schema.js");
 const PlaylistModel = Schema.PlaylistModel;
 
-// INDEX route
+// INDEX route (all routes structered from previous HW)
 router.get('/', (request, response) => {
 
     // FIND all of the playlists in the database
